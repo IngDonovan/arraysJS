@@ -18,3 +18,7 @@ const urlFinal= title.split(' ').join('-').toLowerCase();
 //[ 'Curso', 'de', 'manipulación', 'de', 'arrays' ]
 console.log(urlFinal);
 //curso-de-manipulación-de-arrays
+
+function solution(title) {
+	return title.replaceAll(" ", "-").toLowerCase();
+}; 
