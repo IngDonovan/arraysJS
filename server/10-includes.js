@@ -23,3 +23,15 @@ const rta2 =pets.includes('dog');
 console.log('includes', rta2);
 
 //includes true
+
+
+
+function filterByTerm(array, term) {
+    // Tu código aquí 👈
+        return array.filter(item => {
+            return item.includes(term);
+        });
+  }
+
+const rta3 = filterByTerm(["ana", "santi", "nico", "anastasia"],"ana")
+console.log(rta3);
