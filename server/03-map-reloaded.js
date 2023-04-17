@@ -73,3 +73,31 @@ original [
   { customerName: 'Santiago', total: 180, delivered: true },
   { customerName: 'Valentina', total: 240, delivered: true }
 ]*/
+
+
+const arrayObj = [
+  {
+    name: "Product 1",
+    price: 1000,
+    stock: 10
+  },
+  {
+    name: "Product 2",
+    price: 2000,
+    stock: 20
+  }
+];
+
+
+function addNewAttr(array) {
+    // Tu código aquí 👈
+    return array.map((o) => {
+      return {
+        ...o,
+        taxes: (Math.trunc(o.price * .19))
+      };
+    });
+  };
+
+  const newArrayObje = addNewAttr(arrayObj);
+  console.log(newArrayObje);
