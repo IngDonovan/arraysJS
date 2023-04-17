@@ -34,3 +34,11 @@ const team = [
 
   const rta3 = team.every(item => item.age <= 15);
   console.log('team menor de 15 años?', rta3);
+
+const array = [2,4];
+
+const rta4 =  
+array.length ?
+array.every(item => item % 2 === 0):false;
+
+console.log(rta4);
