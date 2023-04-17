@@ -23,3 +23,13 @@ console.log('new',otherArray);
 /*original [ 'a', 'b', 'c' ]
 new [ 'a++', 'b++', 'c++' ]
 */
+
+
+function multiplyElements(array) {
+    const array2 = array.map(element => element*2);
+    console.log (array2);
+ }
+ 
+multiplyElements([2, 4, 5, 6, 8]);
+
+//[ 4, 8, 10, 12, 16 ]
