@@ -91,3 +91,13 @@ console.log(rta6);
   2021-02-01T14:00:00.000Z
 ]
 */
+
+//Ejercicio
+const mat = [
+  "Beautiful is better than ugly",
+  "Explicit is better than implicit",
+  "Simple is better than complex",
+  "Complex is better than complicated",
+];
+const ejer = mat.flatMap((item) => item.split(" ")).length;
+console.log(ejer); 
